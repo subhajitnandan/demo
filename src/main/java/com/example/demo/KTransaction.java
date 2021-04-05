@@ -15,6 +15,7 @@ static int dp(int[]n,int k) {
 		for (int j = 1; j < n.length; j++) {
 			dp[i][j]=Integer.max(dp[i][j-1], n[j]+maxdiff);
 			maxdiff=Integer.max(maxdiff,dp[i-1][j]-n[j]);
+			
 		}
 	}
 	return dp[k][n.length-1];
