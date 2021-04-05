@@ -29,7 +29,7 @@ public Map<String,String> getCurrencyConvert(@PathVariable(value="baseCurrency")
 	Map<String,String> ret=new HashMap<String, String>(1);
 ret.put(trcurr, result.getRates().get(trcurr));
 
-return ret;
+ return ret;
 	
 }
 /**
